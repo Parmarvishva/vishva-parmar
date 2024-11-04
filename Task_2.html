@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .example-box {
+            text-align: center;
+            background: #ddd;
+            padding: 40px;
+            font-size: 36px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .box-model {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .styled-list {
+            list-style-type: disc;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .absolute-position {
+            position: relative;
+            padding: 20px;
+            background: #eee;
+            margin-bottom: 20px;
+        }
+        .absolute-position div {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background-color: #f44336;
+            color: white;
+            padding: 5px;
+        }
+        .borders-box {
+            border: 2px solid #000;
+            background-color: #e0f7fa;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: bounce 2s infinite;
+            margin: 20px auto;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip:hover::after {
+            content: 'Hover over me';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .image-box {
+            text-align: center;
+            margin: 20px 0;
+            background-color: #ddd;
+            padding: 40px;
+            font-size: 36px;
+            color: #777;
+        }
+        .css-variables {
+            --main-bg-color: blue;
+            --secondary-bg-color: green;
+            padding: 10px;
+        }
+        .css-variables .blue-box {
+            background-color: var(--main-bg-color);
+            color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .css-variables .green-box {
+            background-color: var(--secondary-bg-color);
+            color: white;
+            padding: 20px;
+        }
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .flexbox div {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border: #777;
+        }
+        .media-query {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .gradient-section {
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CSS Example</h1>
+<p class="container">This page demonstrates various CSS features.</p>
+
+<!-- Example Box -->
+<div class="example-box">
+    Welcome to CSS Styling<br>
+    1200 x 300
+</div>
+
+<!-- Box Model Section -->
+<div class="box-model">
+    <h2>The Box Model</h2>
+    <p>This box has padding, margins, and borders applied.</p>
+</div>
+
+<!-- Styled List -->
+<h2>Styled List</h2>
+<ul class="styled-list">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ul>
+
+<!-- Absolute Positioning -->
+<div class="absolute-position">
+    <div>I'm positioned absolutely!</div>
+    <h2>CSS Positioning</h2>
+    <p>This box contains an absolutely positioned element inside it.</p>
+</div>
+
+<!-- Borders and Boxes -->
+<div class="borders-box">
+    <h2>Borders and Boxes</h2>
+    <p>This is a colored box with custom borders.</p>
+</div>
+
+<!-- CSS3 Animations -->
+<h2>CSS3 Animations</h2>
+<div class="animation"></div>
+
+<!-- CSS Tooltips -->
+<h2>CSS Tooltips</h2>
+<p class="tooltip">Hover over me</p>
+
+<!-- Styled Image -->
+<h2>Styled Image</h2>
+<div class="image-box">
+    400 x 400
+</div>
+
+<!-- CSS Variables -->
+<h2>CSS Variables</h2>
+<div class="css-variables">
+    <div class="blue-box">This box uses a CSS variable for the background color.</div>
+    <div class="green-box">This one uses another variable for the background.</div>
+</div>
+
+<!-- Flexbox -->
+<h2>Flexbox</h2>
+<div class="flexbox">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+</div>
+
+<!-- Responsive Layout with Media Queries -->
+<h2>Responsive Layout with Media Queries</h2>
+<p class="media-query">Resize the browser window to see the layout change.</p>
+
+<!-- Working with Gradients -->
+<div class="gradient-section">
+    <h2>Working with Gradients</h2>
+    <p>This section has a gradient background.</p>
+</div>
+
+</body>
+</html>
